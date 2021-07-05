@@ -1,0 +1,18 @@
+.address {
+  margin-bottom: 9px;
+  font-style: normal;
+}
+
+.footer-contacts__list {
+  color: $color-font-footer;
+}
+
+.footer-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-contacts__info {
+  margin-right: 70px;
+}

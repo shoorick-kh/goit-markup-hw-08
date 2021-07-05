@@ -1,0 +1,45 @@
+.our-work {
+  padding-bottom: 94px;
+}
+
+.our-work__list {
+  display: flex;
+}
+
+.our-work__item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.our-work__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.our-work__thumb {
+  display: block;
+  position: relative;
+}
+
+.our-work__label {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $color-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

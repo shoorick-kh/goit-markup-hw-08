@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  padding: 32px 0;
+}
+.nav__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.link--active {
+  position: relative;
+  color: $main-color-mark;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0px;
+    bottom: -3px;
+    border-radius: 2px;
+    border-bottom: 4px solid;
+  }
+}

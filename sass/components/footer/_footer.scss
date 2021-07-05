@@ -1,0 +1,21 @@
+.footer {
+  background-color: $main-background-color;
+  color: $color-white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}

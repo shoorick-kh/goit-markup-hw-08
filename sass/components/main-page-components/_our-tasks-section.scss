@@ -1,0 +1,59 @@
+.our-tasks {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-tasks__title {
+  visibility: hidden;
+  height: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.our-tasks__list {
+  display: flex;
+}
+
+.our-tasks__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.task__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: $background-color;
+  border: none;
+  border-radius: 4px;
+}
+.task__logo {
+  width: 70px;
+  height: 70px;
+}
+
+.task__title {
+  width: 270px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.task__text {
+  width: 270px;
+  height: 75px;
+  color: $second-color-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}

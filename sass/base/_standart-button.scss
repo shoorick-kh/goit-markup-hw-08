@@ -1,0 +1,24 @@
+.standart__button {
+  display: inline-block;
+  min-width: 200px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  background-color: $main-color-mark;
+  font-family: $main-font;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: color, fill, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $main-background-color;
+  }
+}

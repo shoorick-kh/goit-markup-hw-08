@@ -1,0 +1,20 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+  color: $second-color-font;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts__psevdo {
+  margin-right: 10px;
+}

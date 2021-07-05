@@ -1,0 +1,17 @@
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+  transition-property: color, fill, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $main-color-mark;
+    color: $main-color-mark;
+  }
+}
