@@ -1,9 +1,14 @@
 .burger-button {
-  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   background-color: $color-white;
   border: 0;
   & :hover,
   &:focus {
     fill: $main-color-mark;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

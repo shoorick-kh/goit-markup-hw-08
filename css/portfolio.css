@@ -161,7 +161,7 @@ img {
 @media screen and (min-width: 768px) {
   .logo {
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
   }
 }
 
@@ -175,7 +175,7 @@ img {
 }
 
 .nav__link {
-  padding: 32px 0;
+  padding: 31px 0;
 }
 
 .nav__list {
@@ -209,7 +209,7 @@ img {
   content: '';
   width: 100%;
   left: 0px;
-  bottom: -3px;
+  bottom: 0;
   border-radius: 2px;
   border-bottom: 4px solid;
 }
@@ -222,6 +222,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .contacts {
+    display: block;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
     display: flex;
   }
 }
@@ -231,17 +238,48 @@ img {
   align-items: center;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__psevdo {
   margin-right: 10px;
 }
 
+.burger-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #ffffff;
+  border: 0;
+}
+
+.burger-button :hover, .burger-button:focus {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
+}
+
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .button {
@@ -271,12 +309,26 @@ img {
 
 .buttons__list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons__list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons__list {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .cards__list {

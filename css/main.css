@@ -161,7 +161,7 @@ img {
 @media screen and (min-width: 768px) {
   .logo {
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
   }
 }
 
@@ -175,7 +175,7 @@ img {
 }
 
 .nav__link {
-  padding: 32px 0;
+  padding: 31px 0;
 }
 
 .nav__list {
@@ -209,7 +209,7 @@ img {
   content: '';
   width: 100%;
   left: 0px;
-  bottom: -3px;
+  bottom: 0;
   border-radius: 2px;
   border-bottom: 4px solid;
 }
@@ -222,6 +222,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .contacts {
+    display: block;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
     display: flex;
   }
 }
@@ -231,8 +238,16 @@ img {
   align-items: center;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__psevdo {
@@ -240,13 +255,21 @@ img {
 }
 
 .burger-button {
-  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   background-color: #ffffff;
   border: 0;
 }
 
 .burger-button :hover, .burger-button:focus {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
 }
 
 .hero {
@@ -455,6 +478,7 @@ img {
 }
 
 .team__item {
+  margin-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -822,14 +846,21 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 528px;
+  max-width: 450px;
   width: 100%;
-  max-height: 581px;
-  height: 100%;
+  max-height: 609px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__content {
+    max-width: 528px;
+    width: 100%;
+    max-height: 581px;
+  }
 }
 
 .button-close {
@@ -878,9 +909,15 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.172;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__text {
+    line-height: 1.172;
+  }
 }
 
 .form__label {
@@ -1015,19 +1052,33 @@ img {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.172;
   color: #757575;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .link-policy {
   padding-left: 4px;
   color: inherit;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.172;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-policy {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .form__button {

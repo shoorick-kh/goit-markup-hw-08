@@ -2,6 +2,10 @@
   display: none;
   color: $second-color-font;
   @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
   margin-left: auto;
@@ -13,8 +17,15 @@
 }
 
 .contacts__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
