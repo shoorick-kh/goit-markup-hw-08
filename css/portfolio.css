@@ -246,6 +246,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 50px;
   }
 }
@@ -332,18 +333,40 @@ img {
 }
 
 .cards__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__list {
+    margin: -15px;
+  }
+}
+
 .cards__item {
-  margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
 }
 
 .cards__border {
@@ -362,7 +385,6 @@ img {
 
 .cards__prospect {
   position: relative;
-  width: 370px;
   overflow: hidden;
 }
 
@@ -393,7 +415,7 @@ img {
 }
 
 .card__desc {
-  padding: 20px 24px;
+  padding: 20px 18px;
 }
 
 .card__name {
