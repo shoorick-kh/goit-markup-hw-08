@@ -38,7 +38,7 @@
                     </a>
                 </li>
             </ul>
-            <button class="burger-button" type="button">
+            <button data-menu-open class="burger-button" type="button" >
                 <svg class="burger-menu" width=40px height=40>
                     <use href="./images/sprite.svg#icon-burger"> </use>
                 </svg>
@@ -442,8 +442,50 @@
             </form>
         </div>
     </div>
+    <div class="menu menu-is-hidden" id="menu" data-menu>
+        <div class="menu__content" id="menu-content">
+            <button data-menu-close type="button" class="button-close-menu">
+                <svg class="icon-close-menu">
+                    <use href="./images/sprite.svg#icon-close">
+                </svg>
+            </button>
+            <div class="menu-nav">
+                <ul class="menu-nav__list">
+                    <li class="menu-nav__item"><a href="./index.html" class="link menu-nav__link menu-nav__link--active ">Студия</a>
+                    </li>
+                    <li class="menu-nav__item"><a href="./portfolio.html" class="link menu-nav__link">Портфолио</a></li>
+                    <li class="menu-nav__item"><a href="" class="link menu-nav__link">Контакты</a></li>
+                </ul>
+                <ul class="menu-contacts__list">
+                    <li class="menu-contacts__item">
+                        <a href="tel:+380961111111" class="link contacts__tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="menu-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="link contacts__mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu-social__list">
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="https://www.instagram.com">instagram</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="https://twitter.com">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="https://www.facebook.com">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="https://www.linkedin.com">Linkedin</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
