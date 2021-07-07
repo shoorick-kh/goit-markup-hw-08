@@ -38,6 +38,11 @@
                     </a>
                 </li>
             </ul>
+            <button class="burger-button" type="button">
+                <svg class="burger-menu" width=40px height=40>
+                    <use href="./images/sprite.svg#icon-burger"> </use>
+                </svg>
+            </button>
         </div>    
     </header>
     <main>
@@ -270,50 +275,52 @@
             </div>
         </section>
         <section class="our-clients">
-            <h2 class="our-clients__title">Постоянные клиенты</h2>
-            <ul class="clients__list">
-                <li class="clients__item">
-                    <a href="#" class="clients__link">
-                        <svg class="clients__logo">
-                            <use href="./images/sprite.svg#icon-company1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="#" class="clients__link">
-                        <svg class="clients__logo">
-                            <use href="./images/sprite.svg#icon-company2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="#" class="clients__link">
-                        <svg class="clients__logo">
-                            <use href="./images/sprite.svg#icon-company3"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="#" class="clients__link">
-                        <svg class="clients__logo">
-                            <use href="./images/sprite.svg#icon-company4"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="#" class="clients__link">
-                        <svg class="clients__logo">
-                            <use href="./images/sprite.svg#icon-company5"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="#" class="clients__link">
-                        <svg class="clients__logo">
-                            <use href="./images/sprite.svg#icon-company6"></use>
-                    </svg></a>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="our-clients__title">Постоянные клиенты</h2>
+                <ul class="clients__list">
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo">
+                                <use href="./images/sprite.svg#icon-company1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo">
+                                <use href="./images/sprite.svg#icon-company2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo">
+                                <use href="./images/sprite.svg#icon-company3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo">
+                                <use href="./images/sprite.svg#icon-company4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo">
+                                <use href="./images/sprite.svg#icon-company5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo">
+                                <use href="./images/sprite.svg#icon-company6"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -322,8 +329,8 @@
                 <a href="/" class="logo footer-logo"><span class="logo-blue">Web</span>Studio</a>
                 <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
                 <ul class="list footer-contacts__list">
-                    <li class="footer-contacts__item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="footer-contacts__item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    <li class="footer-contacts__item"><a href="mailto:info@examle.com" class="link">info@example.com</a></li>
+                    <li class="footer-contacts__item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
                 </ul>
             </div>
             <div class="footer__social">
@@ -376,7 +383,7 @@
         </div>
     </footer>
 
-    <div class="modal is-hidden" id="modal" data-modal>
+    <!-- <div class="modal is-hidden" id="modal" data-modal>
         <div class="modal__content" id="modal-content">
             <button data-modal-close type="button" class="button-close">
                 <svg class="close">
@@ -434,7 +441,7 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
 

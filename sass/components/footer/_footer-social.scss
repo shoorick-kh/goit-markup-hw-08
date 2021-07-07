@@ -1,6 +1,13 @@
 .footer__social {
-  padding-top: 12px;
-  margin-right: 93px;
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+    margin-right: 93px;
+    text-align: start;
+  }
 }
 
 .social__text {
@@ -15,8 +22,11 @@
 }
 
 .social__list--start {
-  justify-content: flex-start;
-  margin: 0;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    margin: 0;
+  }
 }
 .social__link--footer {
   background: rgba(255, 255, 255, 0.1);

@@ -1,6 +1,10 @@
 .our-tasks {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-tasks__title {
@@ -14,12 +18,20 @@
 }
 
 .our-tasks__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .our-tasks__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 
@@ -28,7 +40,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background: $background-color;
   border: none;
@@ -40,16 +51,18 @@
 }
 
 .task__title {
-  width: 270px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .task__text {
-  width: 270px;
   height: 75px;
   color: $second-color-font;
   font-weight: 400;

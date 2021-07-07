@@ -10,8 +10,14 @@
 }
 
 .footer-container {
-  display: flex;
-  justify-content: flex-start;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 }
 
 .footer-logo {

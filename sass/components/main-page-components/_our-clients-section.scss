@@ -1,15 +1,66 @@
 .our-clients {
-  padding: 94px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-clients__title {
-  margin-bottom: 50px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.172;
-  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.171;
   letter-spacing: 0.03em;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.172;
+    margin-bottom: 50px;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -15px;
+}
+
+.clients__item {
+  margin: 15px;
+  width: 210px;
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  padding: 16px 50px;
+  border: 1px solid $third-color-font;
+  border-radius: 4px;
+  transition-property: color, fill, background-color, box-shadow, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $main-color-mark;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 16px 30px;
+  }
 }
 
 .clients__logo {
@@ -23,35 +74,4 @@
   .clients__link:focus & {
     fill: $main-color-mark;
   }
-}
-
-.clients__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  cursor: pointer;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.clients__link {
-  padding: 16px 32px;
-  border: 1px solid $third-color-font;
-  border-radius: 4px;
-  transition-property: color, fill, background-color, box-shadow, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    border-color: $main-color-mark;
-  }
-}
-
-.clients__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

@@ -1,5 +1,7 @@
 .footer-form {
-  padding-top: 12px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
 }
 
 .footer-form__text {
@@ -11,20 +13,28 @@
   line-height: 1.172;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .form-block {
-  display: flex;
-  align-items: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form-block__input {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   color: $color-white;
   letter-spacing: 0.03em;
   padding: 10px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -32,17 +42,27 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .form-block__button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
+  margin: 0 auto;
   fill: $color-white;
   &:hover,
   &:focus {
     fill: $main-background-color;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 
