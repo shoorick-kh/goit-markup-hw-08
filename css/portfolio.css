@@ -13,6 +13,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -124,7 +126,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 15px;
 }
 
 .link {
@@ -149,8 +150,8 @@ img {
   color: inherit;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.383;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   text-decoration: none;
   display: inline-block;
@@ -162,6 +163,13 @@ img {
   .logo {
     padding-top: 26px;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.383;
   }
 }
 
@@ -223,7 +231,8 @@ img {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
-    margin-left: 84px;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 

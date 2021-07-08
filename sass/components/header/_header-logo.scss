@@ -2,8 +2,8 @@
   color: inherit;
   font-family: $accent-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.383;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   text-decoration: none;
   display: inline-block;
@@ -12,6 +12,10 @@
   @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.383;
   }
 }
 
