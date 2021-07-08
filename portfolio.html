@@ -62,17 +62,14 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card1-354.jpg 354w,
-                                            ./images/portfolio/card1-370.jpg 370w,
-                                            ./images/portfolio/card1-450.jpg 450w, 
-                                            ./images/portfolio/card1-708.jpg 708w, 
-                                            ./images/portfolio/card1-740.jpg 740w, 
-                                            ./images/portfolio/card1-900.jpg 900w" 
-                                            src="./images/portfolio/card1-354.jpg" 
-                                            alt="Главный вид сайта"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card1-370.jpg 1x, ./images/portfolio/card1-740.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card1-354.jpg 1x, ./images/portfolio/card1-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card1-450.jpg 1x, ./images/portfolio/card1-900.jpg 2x" media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card1-370.jpg" alt="Главный вид сайта" width="100%">
+                                </picture>            
                                 <div class="overlay">
-                                    <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                                    <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
                             </div>
@@ -85,15 +82,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card2-354.jpg 354w,
-                                            ./images/portfolio/card2-370.jpg 370w,
-                                            ./images/portfolio/card2-450.jpg 450w, 
-                                            ./images/portfolio/card2-708.jpg 708w, 
-                                            ./images/portfolio/card2-740.jpg 740w, 
-                                            ./images/portfolio/card2-900.jpg 900w" 
-                                            src="./images/portfolio/card2-354.jpg" 
-                                            alt="Постер с двумя баскетболистами"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card2-370.jpg 1x, ./images/portfolio/card2-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card2-354.jpg 1x, ./images/portfolio/card2-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card2-450.jpg 1x, ./images/portfolio/card2-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card2-370.jpg" alt="Постер с двумя баскетболистами" width="100%">
+                                </picture>           
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
@@ -107,15 +104,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card3-354.jpg 354w,
-                                            ./images/portfolio/card3-370.jpg 370w,
-                                            ./images/portfolio/card3-450.jpg 450w, 
-                                            ./images/portfolio/card3-708.jpg 708w, 
-                                            ./images/portfolio/card3-740.jpg 740w, 
-                                            ./images/portfolio/card3-900.jpg 900w" 
-                                            src="./images/portfolio/card3-354.jpg" 
-                                            alt="Эмблема ресторана"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card3-370.jpg 1x, ./images/portfolio/card3-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card3-354.jpg 1x, ./images/portfolio/card3-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card3-450.jpg 1x, ./images/portfolio/card3-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card3-370.jpg" alt="Эмблема ресторана" width="100%">
+                                </picture>     
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
@@ -129,15 +126,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card4-354.jpg 354w,
-                                            ./images/portfolio/card4-370.jpg 370w,
-                                            ./images/portfolio/card4-450.jpg 450w, 
-                                            ./images/portfolio/card4-708.jpg 708w, 
-                                            ./images/portfolio/card4-740.jpg 740w, 
-                                            ./images/portfolio/card4-900.jpg 900w" 
-                                            src="./images/portfolio/card4-354.jpg" 
-                                            alt="Наушники"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card4-370.jpg 1x, ./images/portfolio/card4-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card4-354.jpg 1x, ./images/portfolio/card4-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card4-450.jpg 1x, ./images/portfolio/card4-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card4-370.jpg" alt="Наушники" width="100%">
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
@@ -151,15 +148,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card5-354.jpg 354w,
-                                            ./images/portfolio/card5-370.jpg 370w,
-                                            ./images/portfolio/card5-450.jpg 450w, 
-                                            ./images/portfolio/card5-708.jpg 708w, 
-                                            ./images/portfolio/card5-740.jpg 740w, 
-                                            ./images/portfolio/card5-900.jpg 900w" 
-                                            src="./images/portfolio/card5-354.jpg" 
-                                            alt="Две коробки"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card5-370.jpg 1x, ./images/portfolio/card5-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card5-354.jpg 1x, ./images/portfolio/card5-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card5-450.jpg 1x, ./images/portfolio/card5-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card5-370.jpg" alt="Две коробки" width="100%">
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
@@ -173,15 +170,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card6-354.jpg 354w,
-                                            ./images/portfolio/card6-370.jpg 370w,
-                                            ./images/portfolio/card6-450.jpg 450w, 
-                                            ./images/portfolio/card6-708.jpg 708w, 
-                                            ./images/portfolio/card6-740.jpg 740w, 
-                                            ./images/portfolio/card6-900.jpg 900w" 
-                                            src="./images/portfolio/card6-354.jpg"
-                                            alt="Главный вид сайта"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card6-370.jpg 1x, ./images/portfolio/card6-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card6-354.jpg 1x, ./images/portfolio/card6-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card6-450.jpg 1x, ./images/portfolio/card6-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card6-370.jpg" alt="Главный вид сайта" width="100%">
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
@@ -195,15 +192,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card7-354.jpg 354w,
-                                            ./images/portfolio/card7-370.jpg 370w,
-                                            ./images/portfolio/card7-450.jpg 450w, 
-                                            ./images/portfolio/card7-708.jpg 708w, 
-                                            ./images/portfolio/card7-740.jpg 740w, 
-                                            ./images/portfolio/card7-900.jpg 900w" 
-                                            src="./images/portfolio/card7-354.jpg"
-                                            alt="Книга"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card7-370.jpg 1x, ./images/portfolio/card7-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card7-354.jpg 1x, ./images/portfolio/card7-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card7-450.jpg 1x, ./images/portfolio/card7-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card7-370.jpg" alt="Книга" width="100%">
+                                </picture>                                            
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
@@ -217,15 +214,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card8-354.jpg 354w,
-                                            ./images/portfolio/card8-370.jpg 370w,
-                                            ./images/portfolio/card8-450.jpg 450w, 
-                                            ./images/portfolio/card8-708.jpg 708w, 
-                                            ./images/portfolio/card8-740.jpg 740w, 
-                                            ./images/portfolio/card8-900.jpg 900w" 
-                                            src="./images/portfolio/card8-354.jpg" 
-                                            alt="Бумажная бирка"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card8-370.jpg 1x, ./images/portfolio/card8-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card8-354.jpg 1x, ./images/portfolio/card8-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card8-450.jpg 1x, ./images/portfolio/card8-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card8-370.jpg" alt="Бумажная бирка" width="100%">
+                                </picture>                                            
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
@@ -239,15 +236,15 @@
                     <li class="cards__item">
                         <div class="cards__border">
                             <div class="cards__prospect">
-                                <img srcset="./images/portfolio/card9-354.jpg 354w,
-                                            ./images/portfolio/card9-370.jpg 370w,
-                                            ./images/portfolio/card9-450.jpg 450w, 
-                                            ./images/portfolio/card9-708.jpg 708w, 
-                                            ./images/portfolio/card9-740.jpg 740w, 
-                                            ./images/portfolio/card9-900.jpg 900w" 
-                                            src="./images/portfolio/card9-354.jpg" 
-                                            alt="Ноутбук"
-                                            sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw">
+                                <picture>
+                                    <source srcset="./images/portfolio/card9-370.jpg 1x, ./images/portfolio/card9-740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/card9-354.jpg 1x, ./images/portfolio/card9-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/card9-450.jpg 1x, ./images/portfolio/card9-900.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/card9-370.jpg" alt="Ноутбук" width="100%">
+                                </picture>                                            
                                 <div class="overlay">
                                     <p class="overlay__text">TEXT</p>
                                 </div>
