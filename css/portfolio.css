@@ -283,6 +283,9 @@ img {
 }
 
 .menu__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   opacity: 1;
   position: absolute;
   top: 0;
@@ -325,13 +328,6 @@ img {
   pointer-events: none;
 }
 
-.menu-nav {
-  height: 100%;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -372,9 +368,6 @@ img {
 }
 
 .menu-social__list {
-  position: absolute;
-  bottom: 48px;
-  left: 40px;
   display: flex;
   flex-wrap: wrap;
 }
