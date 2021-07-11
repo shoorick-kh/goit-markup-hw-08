@@ -326,6 +326,7 @@ img {
 .menu-is-hidden {
   opacity: 0;
   pointer-events: none;
+  transform: translate(-100% -100%);
 }
 
 .menu-nav__item:not(:last-child) {
